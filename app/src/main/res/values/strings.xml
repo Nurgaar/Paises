@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Paises</string>
+    <string name="action_configuracion">Configuracion</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="texto_acerca_de">Aplicación creada por Nuria Garzón. Esta aplicación muestra una
+    lista de paises y su detalle correspodiente, junto con su foto.</string>
+    <string name="descripcion"> Scroll con paises</string>
+
+    <string name="listado">Mostar línea de separación entre elemnetos del listado</string>
+    <string name="formato">Formato del listado</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

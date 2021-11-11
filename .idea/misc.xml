@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/layout/fragment_acerca_de.xml" value="0.33" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/layout/fragment_detalle_paises.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/layout/fragment_pais.xml" value="0.33" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/layout/fragment_pais_list.xml" value="0.33697916666666666" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/menu/menu_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/xml/root_preferences.xml" value="0.27808988764044945" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

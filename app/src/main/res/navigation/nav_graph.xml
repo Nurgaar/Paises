@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/paisFragment">
+    <fragment
+        android:id="@+id/paisFragment"
+        android:name="com.ngg.android.paises.PaisFragment"
+        android:label="@string/selecciona_pais"
+        tools:layout="@layout/fragment_pais_list" >
+        <action
+            android:id="@+id/action_paisFragment_to_detallePaisesFragment"
+            app:destination="@id/detallePaisesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detallePaisesFragment"
+        android:name="com.ngg.paises.DetallePaisesFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_detalle_paises" />
+        <argument
+            android:name="title"
+            app:argType="string"/>
+    <fragment
+        android:id="@+id/acercaDeFragment"
+        android:name="com.ngg.paises.AcercaDeFragment"
+        android:label="@string/acerca_de"
+        tools:layout="@layout/fragment_acerca_de" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.ngg.paises.SettingsFragment"
+        android:label="Configuración" />
+</navigation>
