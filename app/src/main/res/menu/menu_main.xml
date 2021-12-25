@@ -14,4 +14,16 @@
         android:title="@string/acerca_de"
         app:showAsAction="never"
     />
+    <item
+        android:id="@+id/juegoBanderasFragment"
+            android:orderInCategory="99"
+            android:title="@string/Juego_Banderas"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/Ejemplo"
+        android:orderInCategory="99"
+        android:title="@string/Ejemplo"
+        app:showAsAction="never"
+
+    />
 </menu>

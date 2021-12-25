@@ -23,10 +23,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //En vez de llamar a setContentView con el identificador del layout, lo harás pasándole la vista que has inflado previamente con View Binding, de esta forma
+        // sustituye al R.id...
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        //TOOLBAR ES UNA CARACTERÍSTICA DE ESTE FRAGMENTO. PINCHA CRTL Y ELLA Y LO VES
+
         setSupportActionBar(binding.toolbar);
+
+
+        //NAVEGACIÓN
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
@@ -35,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    //CREO EL MENU PRINCIPAL Y LLAMO AL MENU_MAIN.XML QUE ES LA PRIMERA PANTALLA AL INCIAR LA APP
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -42,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    //navega el método a donde corresponde, pasándole los id (el del método y el del fragmento)
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

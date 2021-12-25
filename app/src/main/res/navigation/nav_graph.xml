@@ -30,4 +30,10 @@
         android:id="@+id/settingsFragment"
         android:name="com.ngg.paises.SettingsFragment"
         android:label="Configuración" />
+    <fragment
+        android:id="@+id/juegoBanderasFragment"
+        android:name="com.ngg.paises.JuegoBanderasFragment"
+        android:label="@string/trivial"
+        tools:layout="@layout/fragment_juego_banderas" />
+
 </navigation>

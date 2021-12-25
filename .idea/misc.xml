@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/layout/content_main.xml" value="0.3625" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/layout/fragment_acerca_de.xml" value="0.33" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/layout/fragment_detalle_paises.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/layout/fragment_juega.xml" value="0.29545454545454547" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/layout/fragment_juego_banderas.xml" value="0.33" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/layout/fragment_pais.xml" value="0.33" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/layout/fragment_pais_list.xml" value="0.33697916666666666" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/Paises/app/src/main/res/menu/menu_main.xml" value="0.20520833333333333" />
