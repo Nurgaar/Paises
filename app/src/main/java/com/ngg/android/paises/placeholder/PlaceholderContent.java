@@ -7,9 +7,7 @@ import android.os.Parcelable;
 import com.ngg.paises.R;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Helper class for providing sample content for user interfaces created by
@@ -32,7 +30,12 @@ public class PlaceholderContent {
 
     private Pais getItem(Resources resources, String packageName, String country, int id) {
         String[] countryDetail = resources.getStringArray(resources.getIdentifier(country, "array", packageName));
-        return new Pais (id+"",countryDetail[0], countryDetail[1], countryDetail[2]);
+        return
+                new Pais (id+"",
+                        countryDetail[0],
+                        countryDetail[1],
+                        countryDetail[2],
+                        countryDetail[3]);
     }
 
 
@@ -41,12 +44,15 @@ public class PlaceholderContent {
         public final String nombre;
         public final String foto;
         public final String detalles;
+        public final String bandera;
 
-        public Pais(String id, String nombre, String foto, String detalles) {
+        public Pais(String id, String nombre, String foto, String detalles, String bandera) {
+
             this.id = id;
             this.nombre = nombre;
             this.foto = foto;
             this.detalles = detalles;
+            this.bandera = bandera;
         }
 
         protected Pais(Parcel in) {
@@ -54,6 +60,7 @@ public class PlaceholderContent {
             nombre = in.readString();
             foto = in.readString();
             detalles = in.readString();
+            bandera = in.readString();
         }
 
         public static final Creator<Pais> CREATOR = new Creator<Pais>() {
@@ -84,6 +91,7 @@ public class PlaceholderContent {
             parcel.writeString(nombre);
             parcel.writeString(foto);
             parcel.writeString(detalles);
+            parcel.writeString(bandera);
         }
     }
 }

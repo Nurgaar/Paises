@@ -1,18 +1,24 @@
 package com.ngg.android.paises;
 
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.navigation.Navigation;
 
 import com.ngg.android.paises.placeholder.PlaceholderContent.Pais;
 import com.ngg.paises.R;
-import com.ngg.paises.databinding.FragmentPaisBinding;
+import com.ngg.paises.databinding.FragmentPaisCardBinding;
 
+import java.io.InputStream;
 import java.util.List;
 
 /**
@@ -30,13 +36,15 @@ public class PaisRecyclerViewAdapter extends RecyclerView.Adapter<PaisRecyclerVi
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        return new ViewHolder(FragmentPaisBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
+        return new ViewHolder(FragmentPaisCardBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
 
     }
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
+        InputStream is = getClass().getResourceAsStream("/" + mValues.get(position).bandera);
+        holder.mImageView.setImageDrawable(Drawable.createFromStream(is,""));
         holder.mContentView.setText(mValues.get(position).nombre);
     }
 
@@ -48,11 +56,13 @@ public class PaisRecyclerViewAdapter extends RecyclerView.Adapter<PaisRecyclerVi
     public class ViewHolder extends RecyclerView.ViewHolder implements View
 
             .OnClickListener {
+        public final ImageView mImageView;
         public final TextView mContentView;
         public Pais mItem;
 
-        public ViewHolder(FragmentPaisBinding binding) {
+        public ViewHolder(@NonNull FragmentPaisCardBinding binding) {
             super(binding.getRoot());
+            mImageView =binding.imageView;
             mContentView = binding.content;
             binding.getRoot().setOnClickListener(this);
 
